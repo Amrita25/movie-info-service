@@ -12,6 +12,7 @@ public class MovieResource {
 	
 	@RequestMapping("/{movieId}")
 	public Movie getMovieInfo(@PathVariable("movieId") String movieId){
+		System.out.println("gggggggggggg");
 		return new Movie(movieId,"The Vampire Diaries");
 	}
 
